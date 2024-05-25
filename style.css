@@ -1,0 +1,85 @@
+/**{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; 
+}
+body{
+    display:flex ;
+    min-height: 100vh;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+}
+/* img{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    
+} 
+.banner{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(5bd2b866832bf-wallpaper-preview.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transition: 0.2s;
+clip-path: circle(100px at var(--x) var(--y));
+}
+.content{
+    position: relative
+    ;
+    max-width: 1100px;
+    z-index: 1;
+    /* mix-blend-mode: overlay; 
+    pointer-events: none;
+    user-select: none;
+}
+.content h2{
+    position: relative;
+    color: #fff;
+    font-size: 60px;
+}
+.content p{
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+}*/
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    background-color: #000;
+    overflow: hidden;
+    height: 100vh;
+
+}
+span{position: absolute;
+    background: url('heart.png');
+    /* pointer-events: none; */
+    transform: translate(-50%, -50%);
+    animation: animate 2s linear infinite;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -50%);
+opacity: 2;
+filter: hue-rotate(120deg);
+    }
+  
+    100%{
+        transform: translate(-50%, -1000%);
+opacity: 0;
+filter: hue-rotate(720deg);
+
+    }
+}
